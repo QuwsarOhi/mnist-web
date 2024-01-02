@@ -12,8 +12,6 @@
 
         // defining a dictionary
         const feeds = { input: new ort.Tensor('float32', inputData, dims) };
-        
-        console.log(feeds)
 
         const outputMap = await sess.run(feeds)
         const outputTensor = outputMap.output
