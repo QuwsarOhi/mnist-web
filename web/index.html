@@ -11,29 +11,29 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <div class="pt-md-3 pb-md-4">
-      <h1 class="bd-title mt-0">Digit Classification</h1>
-      <p class="bd-lead">This Convolutional neural network is running in your browser!</p>
+    <div style="padding-left: 20px">
+      <h1 class="bd-title">Digit Classification</h1>
+      <p class="bd-lead">This Convolutional neural network is running in your browser! <br><br></p>
     </div>
   </head>
     
-  <body class="flex container" onload="canvasInit()">
-    <div class="row">
-      <div class="col" style="width: 100%; text-align:center;">
-        <canvas id="canvas" width="280" height="280" style="border:2px solid;"></canvas>
-      </div>
+  <body onload="canvasInit()">
+    <div align="center">
+      <canvas id="myCanvas" width="280" height="280" style="border:2px solid black;"></canvas>
     </div>
 
-    <div class="row mt-3" style="margin-top:5px">
-      <div class="col" style="width: 100%; text-align:center;">
-        <input type="button" class="btn btn-info" value="Clear" id="clr" size="23" onclick="erase()">
-      </div>
+    <div style="margin-top:5px" align="center">
+      <input type="button" class="btn btn-info" value="Clear" id="clr" size="23" onclick="clearArea()">
     </div>
 
-    <div class="row margin-top:10px justify-content-center">
+    <div align="center">
       <div class="col" id="plotGraph"></div>
     </div>
-        
+    
+    <div align="left", style="padding-left: 20px">
+
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
     <script src="script.js"></script>
