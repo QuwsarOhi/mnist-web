@@ -11,6 +11,23 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <style>
+      body {
+        /* Specify your background image */
+        background-image: url("notebooks/mnist_noaug.png");
+        
+        /* Create a linear gradient to fade the background */
+        background: linear-gradient(rgba(255,255,255,0.98), rgba(255,255,255,0.98)), url("notebooks/mnist_noaug.png");
+        
+        /* Additional styles for body */
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+        height: 100vh; /* Ensure the body takes the full height of the viewport */
+        margin: 0; /* Remove default body margin */
+    }
+    </style>
+
     <div style="padding-left: 20px">
       <h1 class="bd-title">Digit Classification</h1>
       <p class="bd-lead">This Convolutional neural network is running in your browser! <br><br></p>
