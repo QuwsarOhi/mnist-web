@@ -115,3 +115,36 @@ function plotData(probs) {
 
     Plotly.newPlot('plotGraph', [trace], layout, {staticPlot: true});
 }
+
+
+// function generate_image(image) {
+//     // create an offscreen canvas
+//     var canvas = document.createElement('canvas');
+//     canvas.setAttribute("id", "canvas_id");
+//     canvas.style.cssText = 'width: 280; height: 280; z-index: 1;';
+
+//     document.getElementById('imageContainer').appendChild(canvas);
+//     document.body.appendChild(canvas);
+
+//     var ctx = canvas.getContext("2d");
+    
+//     if (image === undefined)
+//       var images = generate_image_array_data();
+    
+//     // This is the pixel array of the image
+//     var image = images[2];
+    
+//     var data = new Uint8ClampedArray( new Float64Array( image ).buffer );
+//     var palette = new ImageData(data, 3, 4);
+//     ctx.putImageData(palette, 0, 0);
+    
+//     ctx.imageSmootingEnabled = false;
+//     ctx.globalCompositeOperation = "copy";
+//     ctx.drawImage(canvas, 0, 0, 3, 4, 0, 0, canvas.width, canvas.height);
+// }
+
+// function generate_image_array_data() {
+//     return [, , [-7.440151952041672e-45, -3.549412689007182e-44, -1.6725845544560632e-43, -7.785321621854041e-43, -3.579496378208359e-42, -1.6256392941914181e-41 ] ];
+// }
+
+//   window.onload = generate_image;
